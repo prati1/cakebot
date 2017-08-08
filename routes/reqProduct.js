@@ -14,9 +14,12 @@ router.post('/insert', upload.single('image'), function (req,res){
 		if (err) throw err;
 
 		res.send(req.files);
-		/*res.redirect('/');*/
+		
 	});
+	res.redirect('/');
 	
 })
+
+
 
 module.exports = router;
